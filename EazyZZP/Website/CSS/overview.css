@@ -1,0 +1,136 @@
+body {
+    background: linear-gradient(to right, #f5eccd, #ffffff);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overview {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50vw;
+    min-height: 89vh;
+    background: linear-gradient(to top, #ece9e6, #ffffff);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vh;
+    margin-bottom: 20vh;
+    margin-top: 5vh;
+}
+
+.overview .top {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 2vh;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview .top div:nth-child(1) {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.overview .top .pjn {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+    background-color: #e7572d;
+    padding: 1.2vh;
+    border-radius: 2vh;
+    font-size: 1.6vh;
+}
+
+
+.overview .bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview .bottom .nestbot {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.overview .bottom .nestbot .description {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 5vh;
+    border-radius: 2vh;
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+
+.overview .bottom .tkls h3 {
+
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    padding: 1vh;
+    border-radius: 2vh;
+    color: #6c5ce7;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.overview .bottom .tasks {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.overview .bottom .task {
+    width: 12vw;
+    padding: 2vh;
+    border-radius: 2vh;
+    background-color: #6c5ce7;
+    color: white;
+
+    .taskname {
+        background-color: #e7572d;
+        padding: 1vh;
+        border-radius: 2vh;
+    }
+}
+
+.summary {
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 1vh;
+    border-radius: 2vh;
+
+}
+
+.stat {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+
+
+/* boxshadows */
+
+.summary, .task, .description,  .top, .top div:nth-child(1), .pjn, .tkls h3  {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}

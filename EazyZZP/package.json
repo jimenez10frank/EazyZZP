@@ -1,0 +1,17 @@
+{
+  "name": "zzp_portal_3c_gr2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlabsrv05.stichtingpraktijkleren.nl/oitsdo3c_p6_24-25_zzp-portal_groep2/zzp_portal_3c_gr2.git"
+  },
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}

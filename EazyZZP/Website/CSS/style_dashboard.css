@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1f1f1f;
+    color: #f1afcb;
+}
+
+.page-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-container, .footer-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h3 {
+    margin: 0 0 15px;
+    color: #ffffff;
+}
+
+a {
+    color: #f1afcb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-container {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #8a8a8a;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.profile-summary p, .account-settings p, .recent-activities ul, .notifications ul {
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.recent-activities ul, .notifications ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.recent-activities ul li, .notifications ul li {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.calendar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-content {
+    width: 100%;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.calendar-table th, .calendar-table td {
+    border: 1px solid #8a8a8a;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.calendar-table th {
+    background: rgba(204, 204, 255, 0.5);
+}
+
+.calendar-table td {
+    background: rgba(34, 34, 34, 0.5);
+}
+
+.footer-container p {
+    margin: 20px 0;
+    color: #8a8a8a;
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+
+.project-list {
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-width: fit-content;
+    background-color: #f4f7fc;
+    height: 100vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+/* ----- SCROLLBAR styling ------ */
+::-webkit-scrollbar {
+    width: 0.4vw;
+    opacity: 0.1;
+}
+
+/* knop */
+::-webkit-scrollbar-thumb {
+    height: 33vh;
+    background-color: rgba(96, 206, 224, 0.95);
+    border-radius: 20vh;
+}
+
+.project-list h2 {
+    margin-top: 15vh;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+}
+
+th,
+td {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+}
+
+th {
+    background-color: #6c5ce7;
+    padding: 2.5vh;
+    font-weight: bolder;
+    letter-spacing: 0.9px;
+    color: white;
+}
+th:first-child{
+    border-top-left-radius: 2vh;
+}
+th:last-child{
+    border-top-right-radius: 2vh;
+
+}
+td {
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #e7dede;
+    transition: background-color 0.3s ease;
+}
+
+/* icoontjes*/
+table td:nth-child(1)::before {
+    content: '\f0c0';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 10px;
+    color: #6c5ce7;
+}
+
+table td:nth-child(2)::before {
+    content: '\f133';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 10px;
+    color: #6c5ce7;
+}
+
+table td:nth-child(3)::before {
+    content: '\f133';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 10px;
+    color: #6c5ce7;
+}
+
+table td:nth-child(4)::before {
+    content: '\f05a';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 10px;
+    color: #6c5ce7;
+}
+
+
+td:nth-child(5):before {
+    content: '€';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #28a745;
+    padding-right: 10px;
+}
+
+/* dit heb ik gemaakt voor het geld */
+td:nth-child(6) {
+    color: #28a745;
+    font-weight: 600;
+}
+
+td:nth-child(6):before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #28a745;
+    padding-right: 10px;
+}
+
+.project-list p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff6f61;
+    font-weight: 500;
+}
+tbody tr{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+@media (max-width: 768px) {
+
+    table th,
+    table td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .project-list h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Edit knop */
+.edit-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.edit-btn i {
+    font-size: 16px;
+}
+
+.edit-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+
+.remove {
+    background-color: #e74c3c;
+}
+
+.manage {
+    background-color: #f39c12;
+}
+
+.overview {
+    background-color: #3498db;
+}
+
+.new{
+    margin-top: 1vh;
+    background-color: #6c5ce7;
+    color: white;
+    padding: 0.8vh;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    font-size: large;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.new:hover{
+    transform: scale(1.2);
+}

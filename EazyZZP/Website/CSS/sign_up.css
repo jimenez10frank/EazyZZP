@@ -1,0 +1,232 @@
+body {
+    background-image: radial-gradient(circle at 29% 55%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 4%, transparent 4%, transparent 44%, transparent 44%, transparent 100%), radial-gradient(circle at 85% 89%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 51%, transparent 51%, transparent 52%, transparent 52%, transparent 100%), radial-gradient(circle at 6% 90%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 53%, transparent 53%, transparent 64%, transparent 64%, transparent 100%), radial-gradient(circle at 35% 75%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 6%, transparent 6%, transparent 98%, transparent 98%, transparent 100%), radial-gradient(circle at 56% 75%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 16%, transparent 16%, transparent 23%, transparent 23%, transparent 100%), radial-gradient(circle at 42% 0%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 3%, transparent 3%, transparent 26%, transparent 26%, transparent 100%), radial-gradient(circle at 29% 28%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 51%, transparent 51%, transparent 75%, transparent 75%, transparent 100%), radial-gradient(circle at 77% 21%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 35%, transparent 35%, transparent 55%, transparent 55%, transparent 100%), radial-gradient(circle at 65% 91%, hsla(329, 0%, 99%, 0.05) 0%, hsla(329, 0%, 99%, 0.05) 46%, transparent 46%, transparent 76%, transparent 76%, transparent 100%), linear-gradient(45deg, rgb(83, 91, 235), rgb(76, 11, 174));
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/*      knopje naar overzicht       */
+.overzicht {
+    height: 3vh;
+    gap: 1.5vh;
+    position: fixed;
+    left: 1%;
+    top: 45%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 5vh;
+    padding: 1vh;
+    color: black;
+    font: small;
+    transition: 0.5s ease-in-out;
+}
+
+.overzicht:hover, .inlogOverzicht:hover {
+    background-color:  #e8572e;
+    color: whitesmoke;
+}
+
+.overzicht img{
+    height: inherit;
+}
+
+.inlogOverzicht img{
+    height: inherit;
+}
+
+.inlogOverzicht{
+    gap: 1.5vh;
+    height: 3vh;
+    position: fixed;
+    right:1%;
+    top: 45%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 5vh;
+    padding: 1vh;
+    color: black;
+    font: small;
+    transition: 0.5s ease-in-out;
+}
+
+
+/*               FORM CONTAINER                 */
+
+.formDiv .title {
+    font-size: 5vh;
+    font-weight: bold;
+    color: black;
+}
+
+.container {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 2s ease-in-out;
+}
+
+
+.formDiv {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin-top: 10vh;
+    height: fit-content;
+    min-width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2vh;
+    gap: 7vh;
+    padding: 1.5vh;
+    transition: 1s ease-in-out;
+}
+
+
+
+/* form zelf */
+.formDiv form {
+    min-height: 60vh;
+    min-width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    padding: 5vh;
+    border-width: 1vh;
+}
+.formDiv .lft{
+    width: 20vw;
+    padding-left: 8vh;
+    height: 40vh;
+}
+.formDiv .lft img {
+    height: 40vh;
+    transition: 0.4s ease-in-out;
+}
+.formDiv .lft img:hover{
+    transform:scale(1.2);
+}
+/*                  form inputs                       */
+.formDiv form .naam input,
+.wachtwoord input,
+.achternaam input,
+.email input,
+.nummer input {
+    width: 35vh;
+    height: 2vh;
+    background-color: #030303e8;
+    color: white;
+    border-radius: 1vh;
+    border: none;
+    font-weight: 700;
+    font-size: 1.7vh;
+    padding: 1.5vh;
+    transition: 0.5s ease-in-out;
+    font-size: 1.8vh;
+    
+    input:focus {
+        background-color: rgba(255, 255, 255);
+        color: black;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+}
+.formDiv form .naam,
+.achternaam,
+.email,
+.wachtwoord,
+.nummer {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.formDiv form .naam img,
+.achternaam img,
+.email img,
+.wachtwoord img,
+.nummer img {
+    height: 4vh;
+}
+
+.formDiv form .naam input::placeholder,
+.wachtwoord input::placeholder,
+.achternaam input::placeholder,
+.email input::placeholder,
+.wachtwoord input::placeholder,
+.nummer input::placeholder {
+    text-align: center;
+}
+
+.formDiv .knopje {
+    width: 35vh;
+}
+
+.formDiv .knopje input {
+    width: 35vh;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 50px;
+    margin-left: 8%;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #6c5ce7, #0984e3);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formDiv .knopje input:hover {
+    background-color: #6c5ce7;
+    box-shadow: rgb(149, 69, 253) 0px 0px 20px 1px;}
+
+
+.formDiv form input:focus {
+    background-color: rgba(255, 255, 255);
+    color: black;
+}
+
+
+
+/* een beetje responsive on top :-) */
+@media screen and (max-width: 992px) {
+    .formDiv {
+        flex-direction: column;
+    }
+
+    .formDiv input {
+        width: 45vw !important;
+    }
+
+    .formDiv .lft {
+        display: none;
+    }
+
+    .formDiv .title {
+        font-size: 3vh;
+    }
+    .formDiv .knopje{
+        width: 45vw !important;
+        
+        input{
+            height: 5vh;
+        }
+    }
+
+    .overzicht,
+    .inlogOverzicht {
+        top: 0;
+    }
+}

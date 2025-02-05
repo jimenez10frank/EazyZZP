@@ -1,0 +1,155 @@
+/* -----Feedback Div----- */
+.mess {
+    color: rgba(0, 0, 0, 0.89);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 5vh;
+    position: fixed;
+    left: 3vh;
+    width: fit-content;
+    padding: 1.5vh;
+    border-radius: 2vh;
+    display: none;
+    animation: mess 25s infinite;
+    bottom: 10vh;
+    z-index: 999999999;
+}
+
+/* fout melding  */
+.messInvalid {
+    color: rgba(0, 0, 0, 0.89);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 5vh;
+    position: fixed;
+    left: 3vh;
+    width: fit-content;
+    padding: 1.5vh;
+    border-radius: 2vh;
+    display: none;
+    animation: messInvalid 25s infinite;
+    bottom: 10vh;
+    z-index: 999999999;
+}
+
+/* Feedback #2   */
+.geen-data {
+    animation: breathe 5s infinite ease-in-out;
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+@keyframes mess {
+    0% {
+        box-shadow: 0px 1px 222px 55px rgb(22, 238, 137);
+    }
+
+    10% {
+        box-shadow: 11px 1px 222px 77px rgb(22, 238, 137);
+    }
+
+    20% {
+        box-shadow: 22px 1px 222px 99px rgb(22, 238, 137);
+    }
+
+    30% {
+        box-shadow: 33px 1px 222px 133px rgb(22, 238, 137);
+    }
+
+    40% {
+        box-shadow: 44px 1px 442px 155px rgb(22, 238, 137);
+    }
+
+    60% {
+        box-shadow: 55px 1px 662px 155px rgb(22, 238, 137);
+    }
+
+    80% {
+        box-shadow: 66px 1px 288px 155px rgb(22, 238, 137);
+    }
+
+    100% {
+        box-shadow: 77px 0px 1208px 155px rgb(22, 238, 137);
+    }
+
+}
+
+@keyframes messInvalid {
+    0% {
+        box-shadow: 0px 1px 222px 55px rgb(238, 22, 69);
+    }
+
+    10% {
+        box-shadow: 11px 1px 222px 77px rgb(238, 22, 69);
+    }
+
+    20% {
+        box-shadow: 22px 1px 222px 99px rgb(238, 22, 69);
+    }
+
+    30% {
+        box-shadow: 33px 1px 222px 133px rgb(238, 22, 69);
+    }
+
+    40% {
+        box-shadow: 44px 1px 442px 155px rgb(238, 22, 69);
+    }
+
+    60% {
+        box-shadow: 55px 1px 662px 155px rgb(238, 22, 69);
+    }
+
+    80% {
+        box-shadow: 66px 1px 288px 155px rgb(238, 22, 69);
+    }
+
+    100% {
+        box-shadow: 77px 0px 1208px 155px rgb(238, 22, 69);
+    }
+
+}
+
+/* schaduw frames */
+@keyframes backgrgr {
+    0% {
+        box-shadow: -22px 02px 100px 19px rgb(60, 211, 231);
+    }
+
+    20% {
+        box-shadow: -22px 02px 100px 19px rgb(231, 205, 60);
+    }
+
+    40% {
+        box-shadow: -22px 02px 100px 19px rgb(198, 233, 72);
+    }
+
+    60% {
+        box-shadow: -22px 02px 100px 19px rgb(60, 231, 74);
+    }
+
+    80% {
+        box-shadow: -22px 02px 100px 19px rgb(236, 68, 104);
+    }
+
+    100% {
+        box-shadow: -22px 02px 100px 19px rgb(231, 60, 208);
+    }
+}
+
+
+@keyframes breathe {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

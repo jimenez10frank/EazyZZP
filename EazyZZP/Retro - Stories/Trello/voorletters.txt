@@ -1,0 +1,4 @@
+A = Alexandre
+EA = Emre Ateş
+FJ = Frank junior
+M = Marc
